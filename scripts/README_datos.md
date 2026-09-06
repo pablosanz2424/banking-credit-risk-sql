@@ -11,7 +11,7 @@ banking-credit-risk-sql/
 ├── data/
 ├── scripts/
 │   ├── generar_datos.py
-│   ├── 03_cargar_datos.sql
+│   ├── cargar_datos.sql
 │   └── README_datos.md
 └── sql/
     └── 00_creacion_base_datos.sql
@@ -95,7 +95,7 @@ python scripts/generar_datos.py
 3. Revisa las rutas de los archivos en:
 
 ```text
-scripts/03_cargar_datos.sql
+scripts/cargar_datos.sql
 ```
 
 `LOAD DATA LOCAL INFILE` puede necesitar rutas absolutas dependiendo de la configuración local de MySQL.
@@ -108,7 +108,7 @@ SET GLOBAL local_infile = 1;
 
 y permitir `LOCAL INFILE` en la configuración de la conexión de MySQL Workbench.
 
-5. Ejecuta `03_cargar_datos.sql`.
+5. Ejecuta `cargar_datos.sql`.
 
 ## Convenciones
 

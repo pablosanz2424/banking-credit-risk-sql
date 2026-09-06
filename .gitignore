@@ -1,0 +1,86 @@
+# ============================================================
+# Banking Customer & Credit Risk Analytics
+# .gitignore
+# ============================================================
+
+# ------------------------------------------------------------
+# Datos sintéticos grandes / temporales
+# ------------------------------------------------------------
+
+# El archivo de transacciones se genera con scripts/generar_datos.py
+# y no es necesario versionarlo en Git.
+data/transacciones.csv
+
+# Nombre antiguo utilizado durante la limpieza del dataset.
+data/transacciones_limpias.csv
+
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Caché de Jupyter
+.ipynb_checkpoints/
+
+
+# ------------------------------------------------------------
+# Variables de entorno / credenciales
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+
+
+# ------------------------------------------------------------
+# Editores e IDEs
+# ------------------------------------------------------------
+
+.vscode/
+.idea/
+
+
+# ------------------------------------------------------------
+# Archivos temporales y logs
+# ------------------------------------------------------------
+
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+~$*
+
+
+# ------------------------------------------------------------
+# Sistema operativo
+# ------------------------------------------------------------
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+
+# ------------------------------------------------------------
+# Backups de MySQL Workbench
+# ------------------------------------------------------------
+
+*.mwb.bak

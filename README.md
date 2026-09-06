@@ -113,8 +113,9 @@ banking-credit-risk-sql/
 │   └── evaluaciones_riesgo.csv
 │
 ├── scripts/
-│   └── generar_datos.py
-│
+│   ├── generar_datos.py
+│   ├── cargar_datos.sql
+│   └── README_datos.md
 └── docs/
     ├── modelo_relacional.png
     ├── diccionario_datos.md
